@@ -136,9 +136,9 @@ for message in st.session_state.messages:
 user_input = st.chat_input("Type your message here...")
 
 if user_input:
-normalized = normalize_input(user_input)
+    normalized = normalize_input(user_input)
 
-```
+
 # Display user message
 st.session_state.messages.append({
     "role": "user",
