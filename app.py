@@ -282,8 +282,6 @@ st.session_state.last_decision = {
 }
 
 st.rerun()
-
-
 # --------------------------------------------------
 
 # DECISION DETAILS
