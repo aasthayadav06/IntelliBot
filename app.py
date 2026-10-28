@@ -296,18 +296,20 @@ decision = st.session_state.last_decision
 col1, col2 = st.columns(2)
 
 with col1:
-st.write("**Matched Rule:**", decision["rule_id"])
-st.write("**Intent:**", decision["intent"])
+    st.write("**Matched Rule:**", decision["rule_id"])
+    st.write("**Intent:**", decision["intent"])
 
 with col2:
-st.write(
-"**Match Confidence:**",
-str(decision["confidence"]) + "%"
-)
-st.write("**Selected Action:**", decision["action"])
+    st.write(
+        "**Match Confidence:**",
+        str(decision["confidence"]) + "%"
+    )
+    st.write("**Selected Action:**", decision["action"])
 
 st.caption(
-"IntelliBot uses predefined rules and regular expressions. "
-"Its confidence score represents rule matching, not a trained "
-"machine-learning probability."
+    "IntelliBot uses predefined rules and regular expressions. "
+    "Its confidence score represents rule matching, not a trained "
+    "machine-learning probability."
 )
+
+
