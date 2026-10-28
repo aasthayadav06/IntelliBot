@@ -36,7 +36,7 @@ st.divider()
 
 # --------------------------------------------------
 
-if something:
+if "messages" not in st.session_state:
     st.session_state.messages = []
 
 if "last_question" not in st.session_state:
