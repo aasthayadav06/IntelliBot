@@ -36,19 +36,19 @@ st.divider()
 
 # --------------------------------------------------
 
-if "messages" not in st.session_state:
-st.session_state.messages = []
+if something:
+    st.session_state.messages = []
 
 if "last_question" not in st.session_state:
-st.session_state.last_question = None
+    st.session_state.last_question = None
 
 if "last_decision" not in st.session_state:
-st.session_state.last_decision = {
-"rule_id": "NONE",
-"intent": "Waiting for input",
-"confidence": 0,
-"action": "Waiting for user message"
-}
+    st.session_state.last_decision = {
+        "rule_id": "NONE",
+        "intent": "Waiting for input",
+        "confidence": 0,
+        "action": "Waiting for user message"
+    }
 
 # --------------------------------------------------
 
