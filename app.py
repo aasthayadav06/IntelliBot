@@ -56,25 +56,27 @@ if "last_decision" not in st.session_state:
 
 # --------------------------------------------------
 
-def environment_response():
-return (
-"**Intelligent Agent Environment**\n\n"
-"- **Observability:** Partially Observable\n"
-"- **Nature:** Deterministic\n"
-"- **Task:** Sequential\n"
-"- **Changes:** Static\n"
-)
-
+```python
+# --------------------------------------------------
+# HELPER: ENVIRONMENT CLASSIFICATION
 # --------------------------------------------------
 
-# SIDEBAR
+def environment_response():
+    return (
+        "**Intelligent Agent Environment**\n\n"
+        "- **Observability:** Partially Observable\n"
+        "- **Nature:** Deterministic\n"
+        "- **Task:** Sequential\n"
+        "- **Changes:** Static\n"
+    )
 
+# --------------------------------------------------
+# SIDEBAR
 # --------------------------------------------------
 
 with st.sidebar:
-st.header("About IntelliBot")
+    st.header("About IntelliBot")
 
-```
 st.write(
     "IntelliBot is a rule-based conversational agent. "
     "It matches user messages against predefined regular-expression "
