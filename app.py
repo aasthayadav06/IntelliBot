@@ -151,6 +151,8 @@ intent = "Unknown"
 confidence = 0
 action = "Display fallback response"
 
+normalized = user_input.strip().lower()
+
 # ----------------------------------------------
 # CLEAR COMMAND
 # ----------------------------------------------
@@ -167,7 +169,6 @@ if normalized in ("clear", "clear chat", "reset"):
     }
 
     st.rerun()
-
 # ----------------------------------------------
 # GOODBYE COMMAND
 # ----------------------------------------------
